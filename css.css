@@ -1,0 +1,389 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+h1{
+    font-family:"helvetica";
+}
+body{
+font-family: 'Montserrat', sans-serif;}
+
+.navbar .logo img{
+    margin-bottom:90px;
+
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display:inline-block;
+    margin-left: 20px;
+    margin-bottom: 160px;
+}
+/* Hilangin underline */
+a{
+    text-decoration:none;
+    color:#555;
+}
+p{
+    color:#555;
+    
+}
+.container{
+    max-width: 1500px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.row{
+    display:flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width:300px;
+    
+}
+.col-2 img{
+    max-width:100%;
+    max-height:200%;
+    padding:0px 0;
+    
+}
+.col-2 h1{
+    font-size: 70px;
+    line-height:60px;
+    margin:25px 0;
+    font-style: oblique;
+    
+}
+.col-2 p{
+    font-size:18px;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+.header{
+    
+    background: url("pngtree-2024-chinese-spring-festival-year-of-the-dragon-background-creative-image_13945130.jpg")
+
+}
+.header row{
+    margin-top:70px;
+    
+}
+.categories{
+    margin: 0 0;
+    background: radial-gradient(#fff,#C8E7F5);
+}
+.col-3{
+    flex-basis: 26%;
+    min-width:5%;
+    margin-bottom:30px;
+}
+.col-3 img{
+    width:100%;
+    border-radius:50%;
+    margin-top:60px;
+}
+.categories h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:40px;
+}
+
+
+
+.small-container{
+    max-width:1080px;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
+}
+.col-4{
+    flex-basis:25%;
+    padding:5px;
+    min-width:200px;
+    margin-bottom:50px;
+}
+.col-4 img{
+    width:50%;
+    margin-bottom: -50px;
+    margin-top:-115px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    margin-top:-80px;
+    position: relative;
+    line-height: 60px;
+    color:#555;
+}
+.title::after{
+    content:'';
+    background:#ff523b;
+    width:80px;
+    height:5px;
+    border-radius:5px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+h4{
+    color:#555;
+    font-weight:normal;
+}
+.col-p{
+    font-size:14px;
+}
+
+.brands{
+    margin:100px auto;
+    
+}
+.col-5{
+    width:200px;
+}
+.col-5 img{
+    width:100%;
+    
+}
+.text9{
+    position:absolute;
+    margin-left:120px;
+    margin-bottom:100px;
+}
+/*----------footer-------*/
+.footer{
+    background:#000;
+    color:#8a8a8a;
+    font-size:14px;
+    padding:60px 10px 20px;
+}
+.footer p{
+    color:#8a8a8a;
+}
+.footer h3{
+    color:#fff;
+    margin-bottom:20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width:250px;
+    margin-bottom:20px;
+}
+.footer-col-1{
+    flex-basis:30%;
+}
+.footer-col-2{
+    flex:2;
+    text-align:center;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis:12%;
+    text-align:center;
+}
+ul{
+    list-style-type:none;
+}
+
+.footer hr{
+    border:none;
+    background:#b5b5b5;
+    height:1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align:center;
+}
+.icon-menu{
+    width:28px;
+    margin-bottom: 210px;
+    margin-left:20px;
+    display:none;
+}
+/* media query for menu */
+@media only screen and (max-width: 800px){
+    nav ul{
+        position:absolute;
+        top: 45px;
+        left: 0;
+        background: #333;
+        width:100%;
+        margin-bottom: 160px;
+        overflow:hidden;
+        transition:max-height 0.5s;
+    }
+    nav ul li{
+        display:block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    nav ul li a{
+        color: #fff;
+        
+    }
+    .icon-menu{
+        display:block;
+        cursor:pointer;
+    }
+}
+/*8media query for less than 600 screen size*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align:center;
+        font-size:20px;
+        line-height:30px;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis:100%;
+    }
+    .app-logo img{
+    width:250px;
+    margin-right: -1px;
+    }
+    .footer-col-2 img{
+    width:320px;
+    margin-bottom:20px;
+    margin-right:-10px;}
+    .navbar .logo img{
+        margin-left:70px;
+        margin-top:90px;
+    }
+    
+    
+}
+.box{
+    width:120px;
+    height:120px;
+    margin: 100px 0 0 170px;
+    margin-left:10px;
+    background:#08aeea50  url(mapotofu.jpg) no-repeat;
+    background-size:cover;
+    background-position: top -10px center;
+    background-blend-mode:multiply;
+    animation: morph 8s ease-in-out infinite 1s;
+}
+.box .text{
+    padding:1px;
+    margin-left:150px;
+    
+}
+.text4{
+    position:absolute;
+    margin-left:220px;
+    margin-top:101px;
+    
+    
+}
+p2{
+    color:yellow;
+}
+}
+@keyframes morph{
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+.box2{
+    width:120px;
+    height:120px;
+    margin: 100px 0 0 170px;
+    background:#08aeea50  url(es.jpg) no-repeat;
+    background-size:cover;
+    background-position: top -10px center;
+    background-blend-mode:multiply;
+    animation: morph 8s ease-in-out infinite 1s;
+}
+.text2{
+    margin-right:200px;
+    margin-top:100px;
+    position:absolute;
+    
+}
+.text5{
+    position:absolute;
+    margin-left:100px;
+    margin-top:100px;
+    
+}
+.text6{
+     position:absolute;
+    margin-left:1px;
+    margin-top:130px;
+    
+}
+@keyframes morph{
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+.box3{
+    width:120px;
+    height:120px;
+    margin: 100px 0 0 170px;
+    margin-left:10px;
+    background:#08aeea50  url(combo.jpg) no-repeat;
+    background-size:cover;
+    background-position: top -10px center;
+    background-blend-mode:multiply;
+    animation: morph 8s ease-in-out infinite 1s;
+}
+@keyframes morph{
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+.box3 .text3{
+    padding:1px;
+    margin-left:150px;
+}
